@@ -1,0 +1,37 @@
+Instrukcja uruchomienia projektu
+
+Wymagania wstępne
+Python: Upewnij się, że masz zainstalowany Python 3.6 lub nowszy.
+Virtualenv: Opcjonalnie możesz użyć virtualenv, aby stworzyć izolowane środowisko dla projektu.
+
+Krok 1: Pobierz i rozpakuj projekt
+Rozpakuj przesłany plik zip do wybranego katalogu na swoim komputerze.
+
+Krok 2: Utwórz i aktywuj wirtualne środowisko (opcjonalne)
+Możesz pominąć ten krok, ale zaleca się korzystanie z wirtualnego środowiska.
+bash
+Skopiuj kod
+python -m venv venv
+source venv/bin/activate # dla Linux / MacOS
+venv\Scripts\activate # dla Windows
+
+Krok 3: Zainstaluj zależności
+Przejdź do katalogu z projektem i zainstaluj wymagane zależności:
+bash
+Skopiuj kod
+pip install -r requirements.txt
+
+Krok 4: Skonfiguruj bazę danych
+Zainicjuj bazę danych i wykonaj migracje:
+bash
+Skopiuj kod
+flask db init
+flask db migrate -m "Initial migration."
+flask db upgrade
+
+Krok 5: Uruchom serwer
+Uruchom serwer deweloperski Flask:
+bash
+Skopiuj kod
+flask run
+Aplikacja będzie dostępna pod adresem http://127.0.0.1:5000/.

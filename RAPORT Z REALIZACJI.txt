@@ -1,0 +1,28 @@
+Raport z realizacji
+
+1. Opis zaimplementowanych funkcji
+Rejestracja użytkowników: Możliwość rejestracji nowych użytkowników.
+Logowanie i wylogowywanie: Użytkownicy mogą się logować i wylogowywać.
+Tworzenie postów: Zalogowani użytkownicy mogą tworzyć nowe posty.
+Edycja i usuwanie postów: Autorzy mogą edytować i usuwać swoje posty.
+Dodawanie komentarzy: Użytkownicy mogą komentować posty.
+
+2. Użyte narzędzia, biblioteki i frameworki
+Flask: Mikroframework webowy użyty do stworzenia aplikacji.
+Flask-SQLAlchemy: Rozszerzenie Flaska do obsługi baz danych.
+Flask-Migrate: Narzędzie do migracji bazy danych.
+Flask-Login: Zarządzanie sesjami użytkowników.
+Flask-WTF: Obsługa formularzy.
+
+3. Napotkane problemy i ich rozwiązania
+Problem z ładowaniem CSS: Błąd 404 przy ładowaniu plików CSS. Rozwiązanie: upewnienie się, że pliki są w odpowiednim katalogu i że ścieżki w szablonach są poprawne.
+Migracje bazy danych: Problemy z inicjalizacją bazy danych. Rozwiązanie: Wykonanie odpowiednich komend flask db migrate i flask db upgrade.
+Działanie funkcji rejestracji użytkowników.
+
+4. Źródła informacji
+Flask Documentation: https://flask.palletsprojects.com/en/2.0.x/
+Flask-SQLAlchemy Documentation: https://flask-sqlalchemy.palletsprojects.com/en/2.x/
+Flask-Migrate Documentation: https://flask-migrate.readthedocs.io/en/latest/
+Flask-Login Documentation: https://flask-login.readthedocs.io/en/latest/
+Flask-WTF Documentation: https://flask-wtf.readthedocs.io/en/latest/
+Tutorial: Miguel Grinberg’s Flask Mega-Tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
